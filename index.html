@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/logo-tab.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlWan, Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="bg-[#FFFCB5]">
+    <section class="relative h-screen overflow-hidden">
+      <div
+        class="absolute inset-0 bg-fixed bg-center bg-cover"
+        style="background-image: url('img/hero.png')"
+      >
+        <div class="bg-black opacity-50 h-full w-full"></div>
+      </div>
+      <nav
+        class="flex justify-between items-center p-6 md:p-10 lg:p-4 relative z-10" data-aos="fade-up" data-aos-duration="4000"
+      >
+        <img
+          src="img/logo-tab.png"
+          class="hidden md:block"
+          alt="logo"
+          width="40px"
+        />
+        <ul
+          class="hidden md:flex flex-row justify-center items-center gap-6 px-10"
+        >
+          <li
+            class="text-slate-300 font-medium hover:text-orange-300 border-b hover:border-orange-500 p-1 rounded-lg hover:p-1 border-orange-200 hover:-translate-y-1 duration-300 cursor-pointer"
+          >
+            Home
+          </li>
+          <li
+            class="text-slate-300 font-medium hover:text-orange-300 hover:border-b border-orange-300 hover:-translate-y-1 duration-300 cursor-pointer"
+          >
+            About Us
+          </li>
+          <li
+            class="text-slate-300 font-medium hover:text-orange-300 hover:border-b border-orange-300 hover:-translate-y-1 duration-300 cursor-pointer"
+          >
+            Portfolio
+          </li>
+          <li
+            class="text-slate-300 font-medium hover:text-orange-300 hover:border-b border-orange-300 hover:-translate-y-1 duration-300 cursor-pointer"
+          >
+            Contact
+          </li>
+        </ul>
+
+        <div class="flex md:hidden justify-between items-center w-full">
+          <img src="img/logo-tab.png" class="block" alt="logo" width="40px" />
+          <button
+            id="menu-btn"
+            class="block md:hidden"
+            aria-label="Toggle menu"
+            role="button"
+          >
+            <span id="menu-icon" class="material-symbols-outlined">menu</span>
+            <span id="close-icon" class="material-symbols-outlined hidden"
+              >close</span
+            >
+          </button>
+        </div>
+        <ul
+          id="mobile-menu"
+          class="hidden flex-col justify-center items-center gap-4 mt-4 bg-white shadow-lg p-4 absolute right-4 top-16 w-3/4 list-none z-20"
+        >
+          <li class="hover:text-blue-500 cursor-pointer">Home</li>
+          <li class="hover:text-blue-500 cursor-pointer">About Us</li>
+          <li class="hover:text-blue-500 cursor-pointer">Portfolio</li>
+          <li class="hover:text-blue-500 cursor-pointer">Sign Up</li>
+        </ul>
+      </nav>
+      <div
+        class="relative z-10 flex flex-col items-center text-center justify-center mx-auto gap-5 px-5 my-40" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1500"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-bold text-center text-slate-100 font-poppins"
+        >
+          Innovation in Every Journey
+        </h1>
+        <p
+          class="text-xs md:text-[18px] md:w-[700px] md:tracking-widest md:leading-relaxed text-center text-slate-200 font-poppins"
+        >
+          Discover Jeep's Electric Vehicles Ready to Conquer Any Terrain,
+          Crafted with Expertise by Our Web Development Specialists.
+        </p>
+        <div>
+          <a
+            class="inline-block rounded bg-[#EA843A] px-8 py-3 hover:mr-2 text-sm font-medium text-[#FFFCB5] transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
+            href="#"
+          >
+            Click Me
+          </a>
+
+          <a
+            class="group relative inline-flex items-center overflow-hidden rounded border border-[#F9A84C] px-8 py-3 text-[#F9A84C] focus:outline-none focus:ring active:text-[#F9A84C]"
+            href="#"
+          >
+            <span
+              class="absolute -start-full transition-all group-hover:start-4"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+
+            <span class="text-sm font-medium transition-all group-hover:ms-4"
+              >About Us</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col md:flex-row items-center bg-[#FFFCB5] justify-center gap-5 my-10 mx-5 md:mx-32 rounded-lg px-7 py-4"
+    >
+      <h1
+        class="text-3xl md:text-6xl bg-[#EA843A] p-1 text-[#FFFCB5] rounded-md font-serif" data-aos="fade-right"
+      >
+        About
+      </h1>
+      <p class="text-sm text-center md:text-left font-poppins md:text-lg" data-aos="fade-left">
+        AlWan, Inc. is a dynamic company specializing in Electric car production
+        and Website development specialist. We prioritize quality and efficiency
+        in every project, led by a dedicated team committed to excellence. At
+        AlWan, Inc., we strive to deliver solutions that exceed expectations and
+        build strong, lasting partnerships with our clients.
+      </p>
+    </section>
+
+    <section
+      class="relative h-fit overflow-y-scroll pb-16 md:py-16 flex flex-col md:flex-row items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-fixed bg-center bg-cover bg-[url('img/hero.png')]"
+      >
+        <div class="bg-black opacity-50 h-full w-full"></div>
+      </div>
+      <p
+        class="text-white text-3xl md:text-7xl font-bold z-20 text-center md:-rotate-90 border-b-8 md:border-none rounded-lg border-white py-1 md:py-0 my-10 md:my-0"
+      >
+        My Team
+      </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-5"
+      >
+        <div
+          href="#"
+          class="group relative block bg-black rounded-lg h-40 md:h-72 md:w-[450px]" data-aos="fade-up" data-aos-duration="1500"
+        >
+          <img
+            alt=""
+            src="img/alwan.PNG"
+            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+          />
+
+          <div class="relative p-4 sm:p-3 lg:p-5">
+            <p
+              class="text-xs md:text-sm font-medium uppercase tracking-widest text-orange-400"
+            >
+              Owner
+            </p>
+
+            <p class="text-lg font-bold text-white sm:text-xl">Alwan . A</p>
+
+            <div class="mt-10 md:mt-24">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-[8px] md:text-base text-white">
+                  "Hello, I am an owner of AlWan, Inc. I oversee operations and
+                  ensure everything runs smoothly. I’m excited to collaborate
+                  and look forward to building great relationships."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          href="#"
+          class="group relative block bg-black rounded-lg h-40 md:h-72 md:w-[450px]" data-aos="fade-up" data-aos-duration="1500"
+        >
+          <img
+            alt=""
+            src="img/dika.PNG"
+            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+          />
+
+          <div class="relative p-4 sm:p-3 lg:p-5">
+            <p
+              class="text-xs md:text-sm font-medium uppercase tracking-widest text-orange-400"
+            >
+              Co-Owner
+            </p>
+
+            <p class="text-lg font-bold text-white sm:text-xl">
+              J . D . Andika
+            </p>
+
+            <div class="mt-10 md:mt-24">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-[8px] md:text-base text-white">
+                  "Hello, and I am the co-owner of AlWan, Inc. Together with my
+                  team, I help oversee operations and ensure we deliver the best
+                  results. I’m looking forward to connecting and collaborating
+                  with you."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          href="#"
+          class="group relative block bg-black rounded-lg h-40 md:h-72 md:w-[450px]" data-aos="fade-up" data-aos-duration="1500"
+        >
+          <img
+            alt=""
+            src="img/barok.PNG"
+            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+          />
+
+          <div class="relative p-4 sm:p-3 lg:p-5">
+            <p
+              class="text-xs md:text-sm font-medium uppercase tracking-widest text-orange-400"
+            >
+              Manager
+            </p>
+
+            <p class="text-lg font-bold text-white sm:text-xl">Z . Mubarok</p>
+
+            <div class="mt-10 md:mt-24">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-[8px] md:text-base text-white">
+                  "Hello, I am currently the manager at AlWan, Inc. I oversee
+                  daily operations to ensure everything runs smoothly and meets
+                  our high standards. I’m excited to connect and collaborate
+                  with you!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          href="#"
+          class="group relative block bg-black rounded-lg h-40 md:h-72 md:w-[450px]" data-aos="fade-up" data-aos-duration="1500"
+        >
+          <img
+            alt=""
+            src="img/jesi.PNG"
+            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-lg"
+          />
+
+          <div class="relative p-4 sm:p-3 lg:p-5">
+            <p
+              class="text-xs md:text-sm font-medium uppercase tracking-widest text-orange-400"
+            >
+              foreman
+            </p>
+
+            <p class="text-lg font-bold text-white sm:text-xl">
+              Z . Zesindra . M . S
+            </p>
+
+            <div class="mt-10 md:mt-24">
+              <div
+                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-[8px] md:text-base text-white">
+                  "Hello, I am currently the foreman at AlWan, Inc. I lead and
+                  supervise our team on-site, ensuring that projects are
+                  completed efficiently and to high standards. Looking forward
+                  to working together!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col md:flex-row items-center md:items-center justify-center bg-[#EA843A] gap-5 my-10 mx-5 md:mx-10 rounded-lg px-7 md:px-24 py-10 hover:shadow-xl shadow-solid-gray"
+    >
+      <div class="flex flex-col gap-5 md:gap-8 items-center md:items-baseline" data-aos="zoom-in" data-aos-duration="1000">
+        <h1
+          class="text-3xl md:text-6xl p-1 font-serif text-[#FFE882] rounded-md"
+        >
+          Hulty Website
+        </h1>
+        <p
+          class="text-sm text-[#FFFCB5] md:text-lg md:pr-10 text-center md:text-left font-normal"
+        >
+          Here are some of my latest works. Each work reflects my commitment to
+          quality and creativity. Whether it's a professional website design or
+          building the latest electric car, every project is made to make a
+          lasting impression.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 items-center justify-center" data-aos="zoom-in" data-aos-duration="1000">
+        <img
+          src="img/portofolio.jpg"
+          alt=""
+          class="w-72 md:w-[400px] h-40 rounded-lg object-cover object-top"
+        />
+        <a
+          href="https://www.behance.net/gallery/179104447/Real-Estate-Website-FREE-UI-Kit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            class="text-sm w-full py-2 md:w-28 border-b-2 border-[#FFFCB5] hover:border-none hover:translate-y-1 rounded-lg bg-[#F9A84C] text-white"
+          >
+            Click
+          </button>
+        </a>
+      </div>
+    </section>
+    
+
+     <section class="flex flex-col items-center justify-center gap-5 md:gap-7 lg:gap-10">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-orange-400 font-serif border-b-8 py-2 border-orange-400">Supported</h1>
+      <div class="container flex flex-col md:flex-col lg:flex-row gap-3 items-center justify-center">
+        <button class="bg-[#FD695B] hover:bg-[#d4574c] rounded-md hover:rounded-xl transition-all duration-300" data-aos="zoom-in-up" data-aos-duration="2000"><img src="img/figma.png" alt="Figma" class="w-fit h-fit"></button>
+        <button class="bg-[#2AAAFB] hover:bg-[#228ed1] rounded-md hover:rounded-xl transition-all duration-300" data-aos="zoom-in-up" data-aos-duration="2000"><img src="img/lightroom.png" alt="Lightroom" class="w-fit h-fit"></button>
+        <button class="bg-[#D4D4D4] hover:bg-[#b6b5b5] rounded-md hover:rounded-xl transition-all duration-300" data-aos="zoom-in-up" data-aos-duration="2000"><img src="img/github.png" alt="Github" class="w-fit h-fit"></button>
+        <button class="bg-[#2F91F4] hover:bg-[#2773be] rounded-md hover:rounded-xl transition-all duration-300" data-aos="zoom-in-up" data-aos-duration="2000"><img src="img/vscode.png" alt="Vscode" class="w-fit h-fit"></button>
+        <button class="bg-[#EE4684] hover:bg-[#cc3e72] rounded-md hover:rounded-xl transition-all duration-300" data-aos="zoom-in-up" data-aos-duration="2000"><img src="img/dribble.png" alt="Dribble" class="w-fit h-fit"></button>
+      </div>
+    </section>
+
+    <section
+      class="items-center justify-center bg-[#EA843A] my-10 mx-5 md:mx-10 gap-5 md:gap-5 rounded-lg px-7 md:px-16 py-10 md:py-20"
+    >
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x gap-5"
+      >
+        <div
+          class="flex flex-col gap-5 md:gap-3 items-center md:items-baseline md:ml-10 p-3"
+        >
+          <p
+            class="text-4xl md:text-5xl text-center text-white md:text-left font-thin"
+          >
+            About
+          </p>
+          <ul class="text-center md:text-left">
+            <li class="text-base text-[#FFFCB5] py-1">About</li>
+            <li class="text-base text-[#FFFCB5] py-1">Careers</li>
+            <li class="text-base text-[#FFFCB5] py-1">History</li>
+            <li class="text-base text-[#FFFCB5] py-1">Our Team</li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col gap-5 md:gap-3 items-center md:items-baseline p-3"
+        >
+          <p
+            class="text-4xl md:text-5xl text-center text-white md:text-left font-thin"
+          >
+            Service
+          </p>
+          <ul class="text-center md:text-left">
+            <li class="text-base text-[#FFFCB5] py-1">FAQs</li>
+            <li class="text-base text-[#FFFCB5] py-1">Contact</li>
+            <li class="text-base text-[#FFFCB5] py-1">Google Ads</li>
+            <li class="text-base text-[#FFFCB5] py-1">Marketing</li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col gap-5 md:gap-3 items-center md:items-baseline md:mr-10 p-3"
+        >
+          <p
+            class="text-4xl md:text-5xl text-center text-white md:text-left font-thin"
+          >
+            Resauces
+          </p>
+          <ul class="text-center md:text-left">
+            <li class="text-base text-[#FFFCB5] py-1">Forum</li>
+            <li class="text-base text-[#FFFCB5] py-1">Upcoming Events</li>
+            <li class="text-base text-[#FFFCB5] py-1">Conference Notes</li>
+            <li class="text-base text-[#FFFCB5] py-1">Online Guides</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>
